@@ -545,6 +545,10 @@
         <ctl name="VoWLAN_Tx Mixer AFE_PCM_TX_VoWLAN" value="1" />
     </path>
 
+    <path name="vowlan-call speaker-and-headphones">
+        <path name="vowlan-call" />
+    </path>
+
     <path name="voicemmode1-call">
         <ctl name="PRI_MI2S_RX_Voice Mixer VoiceMMode1" value="1" />
         <ctl name="VoiceMMode1_Tx Mixer TERT_MI2S_TX_MMode1" value="1" />
@@ -791,6 +795,10 @@
        <path name="volte-call usb-headphones" />
     </path>
 
+    <path name="volte-call speaker-and-headphones">
+        <path name="volte-call" />
+    </path>
+
     <path name="compress-voip-call">
         <ctl name="PRI_MI2S_RX_Voice Mixer Voip" value="1" />
         <ctl name="Voip_Tx Mixer TERT_MI2S_TX_Voip" value="1" />
@@ -815,6 +823,10 @@
     <path name="compress-voip-call afe-proxy">
         <ctl name="AFE_PCM_RX_Voice Mixer Voip" value='1' />
         <ctl name="Voip_Tx Mixer AFE_PCM_TX_Voip" value='1' />
+    </path>
+
+    <path name="compress-voip-call speaker-and-headphones">
+        <path name="compress-voip-call" />
     </path>
 
     <path name="qchat-call">
@@ -952,6 +964,10 @@
         <ctl name="HPHL" value="Switch" />
         <ctl name="HPHR" value="Switch" />
         <ctl name="OSPL Rx" value="Disable" />
+    </path>
+
+    <path name="voice-speaker-and-voice-headphones">
+        <path name="voice-headphones" />
     </path>
 
     <path name="voice-headset-mic">
