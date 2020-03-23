@@ -140,6 +140,9 @@
     <ctl name="VoiceMMode1_Tx Mixer INT_BT_SCO_TX_MMode1" value="0" />
     <ctl name="AFE_PCM_RX_Voice Mixer VoiceMMode1" value="0" />
     <ctl name="VoiceMMode1_Tx Mixer AFE_PCM_TX_MMode1" value="0" />
+    <!-- Multimode Voice1 proxy-Port -->
+    <ctl name="PROXY_RX_Voice Mixer VoiceMMode1" value="0" />
+    <ctl name="VoiceMMode1_Tx Mixer PROXY_TX_MMode1" value="0" />
     <!-- Multimode Voice1 end -->
 
     <!-- Multimode Voice2 -->
@@ -150,6 +153,9 @@
     <ctl name="VoiceMMode2_Tx Mixer INT_BT_SCO_TX_MMode2" value="0" />
     <ctl name="AFE_PCM_RX_Voice Mixer VoiceMMode2" value="0" />
     <ctl name="VoiceMMode2_Tx Mixer AFE_PCM_TX_MMode2" value="0" />
+    <!-- Multimode Voice2 proxy-Port -->
+    <ctl name="PROXY_RX_Voice Mixer VoiceMMode2" value="0" />
+    <ctl name="VoiceMMode2_Tx Mixer PROXY_TX_MMode2" value="0" />
     <!-- Multimode Voice2 end -->
 
     <!-- Voip -->
@@ -183,6 +189,7 @@
     <!-- Incall Music -->
     <ctl name="Incall_Music Audio Mixer MultiMedia2" value="0" />
     <ctl name="Incall_Music_2 Audio Mixer MultiMedia9" value="0" />
+    <ctl name="Incall_Music Audio Mixer MultiMedia9" value="0" />
     <!-- Incall Music End -->
 
     <!-- QCHAT -->
@@ -549,6 +556,11 @@
         <path name="vowlan-call" />
     </path>
 
+    <path name="voicemmode1-call call-proxy">
+        <ctl name="PROXY_RX_Voice Mixer VoiceMMode1" value="1" />
+        <ctl name="VoiceMMode1_Tx Mixer PROXY_TX_MMode1" value="1" />
+    </path>
+
     <path name="voicemmode1-call">
         <ctl name="PRI_MI2S_RX_Voice Mixer VoiceMMode1" value="1" />
         <ctl name="VoiceMMode1_Tx Mixer TERT_MI2S_TX_MMode1" value="1" />
@@ -631,6 +643,10 @@
         <path name="voicemmode2-call bt-sco-wb" />
     </path>
 
+    <path name="incall-rec-uplink-and-downlink call-proxy-in">
+        <path name="incall-rec-uplink-and-downlink" />
+    </path>
+
     <path name="hfp-sco">
         <ctl name="PRI_MI2S_RX Port Mixer INTERNAL_BT_SCO_TX" value="1" />
         <ctl name="INTERNAL_BT_SCO_RX Audio Mixer MultiMedia6" value="1" />
@@ -671,6 +687,10 @@
         <path name="incall-rec-uplink-compress" />
     </path>
 
+    <path name="incall-rec-uplink call-proxy-in">
+        <path name="incall-rec-uplink" />
+    </path>
+
     <path name="incall-rec-downlink">
         <ctl name="MultiMedia1 Mixer VOC_REC_DL" value="1" />
     </path>
@@ -697,6 +717,10 @@
 
     <path name="incall-rec-downlink-compress bt-sco-wb">
         <path name="incall-rec-downlink-compress" />
+    </path>
+
+    <path name="incall-rec-downlink call-proxy-in">
+        <path name="incall-rec-downlink" />
     </path>
 
     <path name="incall-rec-uplink-and-downlink">
@@ -827,6 +851,11 @@
 
     <path name="compress-voip-call speaker-and-headphones">
         <path name="compress-voip-call" />
+    </path>
+
+    <path name="voicemmode2-call call-proxy">
+        <ctl name="PROXY_RX_Voice Mixer VoiceMMode2" value="1" />
+        <ctl name="VoiceMMode2_Tx Mixer PROXY_TX_MMode2" value="1" />
     </path>
 
     <path name="qchat-call">
