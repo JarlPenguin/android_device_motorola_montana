@@ -23,7 +23,6 @@ export VENDOR=motorola
 DEVICE_BLOB_ROOT="../../../vendor/${VENDOR}/${DEVICE}/proprietary"
 
 sed -i 's|/firmware/image|/vendor/f/image|' "${DEVICE_BLOB_ROOT}/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice"
-patchelf --set-soname camera.msm8937.so "${DEVICE_BLOB_ROOT}/vendor/lib/hw/camera.msm8937.so"
 patchelf --remove-needed android.hidl.base@1.0.so "${DEVICE_BLOB_ROOT}/vendor/lib/com.fingerprints.extension@1.0_vendor.so"
 patchelf --set-soname libactuator_dw9767_truly.so "${DEVICE_BLOB_ROOT}/vendor/lib/libactuator_dw9767_truly.so"
 sed -i "s/ro.product.manufacturer/ro.product.nopefacturer/" "${DEVICE_BLOB_ROOT}/vendor/lib/libmmcamera2_pproc_modules.so"

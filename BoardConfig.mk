@@ -16,6 +16,11 @@ DEVICE_PATH := device/motorola/montana
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 TARGET_OTA_ASSERT_DEVICE := montana
 
+# Camera
+USE_DEVICE_SPECIFIC_CAMERA := true
+TARGET_SUPPORT_HAL1 := false
+BOARD_QTI_CAMERA_32BIT_ONLY := true
+
 # Display
 TARGET_SCREEN_DENSITY := 420
 

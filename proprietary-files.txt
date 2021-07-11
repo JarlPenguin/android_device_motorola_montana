@@ -22,7 +22,6 @@ vendor/lib/libllvd_smore.so
 vendor/lib/libmmcamera_cac3_lib.so
 vendor/lib/libmmcamera_ppeiscore.so|61bc1cd130ca4c9f7cd31a8d6cd4bd5e19e989d0
 vendor/lib/liboptizoom.so
-vendor/lib/libqomx_core.so
 vendor/lib/libqomx_jpegenc.so
 vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libremosaic_daemon.so
@@ -32,7 +31,6 @@ vendor/lib/libubifocus.so
 
 # Camera - from deen_sprout - QPKS30.54-22-12
 vendor/bin/mm-qcamera-daemon|2fc4ed764c1f5e6433bc04d08e1d5cd91c7b3a10
-vendor/lib/hw/camera.msm8953.so:vendor/lib/hw/camera.msm8937.so|533198568f463760412de847d742d1fb41ae8f8e
 vendor/lib/lib_mot_app6_metadata.so|6187e7410c98dbce66c5a9ca0aea0f59eb289ab9
 vendor/lib/lib_mot_led_calibration.so|b61378e571f25608b183492e6351d4ff79fbb560
 vendor/lib/lib_motsensorlistener.so|acfd2ca58d28e95781d88f28bc088cceca267973
@@ -50,7 +48,6 @@ vendor/lib/libmmcamera_facedetection_lib.so|cd46ee0b0f6b9dace5c28981952b35fcc1da
 vendor/lib/libmmcamera_faceproc.so|bff36589f38f4a4447f7a9543aa6b4b7045cf825
 vendor/lib/libmmcamera_hdr_gb_lib.so|ef383afc038b342735a5e96546123a42893dd005
 vendor/lib/libmmcamera_imglib.so|f213b30b80384139512c28f6a021263b963fa827
-vendor/lib/libmmcamera_interface.so|f2ba4eed2bd31ebb3da327f5ad2361c823b9879f
 vendor/lib/libmmcamera_llvd.so|d9a1a71b594ad2603758cb61c1d4df35db91588f
 vendor/lib/libmmcamera_optizoom_lib.so|dd892bd8ea5fa26a97c2460ae4791b6b641476ac
 vendor/lib/libmmcamera_paaf_lib.so|f7c081e0455f0f5e7c817b0a76db9ae63b179a15
@@ -83,7 +80,6 @@ vendor/lib/libmmcamera2_sensor_modules.so|92e6e1a4527c44b809d7a4d76d3775a2ad121f
 vendor/lib/libmmcamera2_stats_algorithm.so|0cdf89ceb0b492a4cc7d461646acbf601f40f6bd
 vendor/lib/libmmcamera2_stats_modules.so|f613c8d61b8f447594519a6cfae80230b8d09833
 vendor/lib/libmmjpeg.so|97101fa8a7d7137011b38349eae2f5de5f63d7a1
-vendor/lib/libmmjpeg_interface.so|9da4aee269b3e5fecdefac09953f123ae046a73f
 vendor/lib/libmmqjpeg_codec.so|93fb7395e1b3490d46163cc1486022876fc4ace2
 vendor/lib/libmmqjpegdma.so|d4b449b6596b50e765819a677aeb6f876475cde9
 vendor/lib/libmotocalibration.so|d23f3bccc0bd0e670362dcb5a660a0b5ed5475f6
