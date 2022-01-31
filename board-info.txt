@@ -1,1 +1,2 @@
+require board=msm8937|montana
 require version-baseband=3.0.c5-00013-8937_GENNS_PACK-1
