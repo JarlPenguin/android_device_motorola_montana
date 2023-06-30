@@ -26,7 +26,7 @@ LOCAL_SRC_FILES += \
         HAL3/QCamera3CropRegionMapper.cpp \
         HAL3/QCamera3StreamMem.cpp
 
-LOCAL_CFLAGS := -Wall -Wextra -Werror -Wno-unused-parameter -Wno-unused-variable
+LOCAL_CFLAGS := -Wall -Wextra -Werror -Wno-unused-parameter -Wno-unused-variable -g -gdwarf-4 -Og
 
 #HAL 1.0 source
 
@@ -60,9 +60,9 @@ LOCAL_CFLAGS += -DUSE_HAL_3_3
 endif
 
 #use media extension
-ifeq ($(TARGET_USES_MEDIA_EXTENSIONS), true)
-LOCAL_CFLAGS += -DUSE_MEDIA_EXTENSIONS
-endif
+#ifeq ($(TARGET_USES_MEDIA_EXTENSIONS), true)
+#LOCAL_CFLAGS += -DUSE_MEDIA_EXTENSIONS
+#endif
 
 #USE_DISPLAY_SERVICE from Android O onwards
 #to receive vsync event from display
@@ -135,6 +135,8 @@ LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_MODULE := camera.$(TARGET_BOARD_PLATFORM)
 LOCAL_VENDOR_MODULE := true
 LOCAL_MODULE_TAGS := optional
+
+LOCAL_STRIP_MODULE := keep_symbols
 
 LOCAL_32_BIT_ONLY := $(BOARD_QTI_CAMERA_32BIT_ONLY)
 include $(BUILD_SHARED_LIBRARY)
