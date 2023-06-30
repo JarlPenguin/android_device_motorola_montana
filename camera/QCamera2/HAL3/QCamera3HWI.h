@@ -394,6 +394,7 @@ private:
             cam_stream_type_t stream_type,
             cam_color_filter_arrangement_t filter_arrangement);
 
+    char moto_reserved[20];
     camera3_device_t   mCameraDevice;
     uint32_t           mCameraId;
     mm_camera_vtbl_t  *mCameraHandle;
@@ -422,6 +423,7 @@ private:
     bool mFlushPerf;
     bool mEnableRawDump;
     bool mForceHdrSnapshot;
+    char moto_reserved2[104];
     QCamera3HeapMemory *mParamHeap;
     metadata_buffer_t* mParameters;
     metadata_buffer_t* mPrevParameters;

@@ -77,6 +77,7 @@ typedef struct {
   uint8_t cam_3a_params_valid;
   cam_sensor_params_t sensor_params;
   mm_jpeg_debug_exif_params_t *debug_params;
+  char moto_reserved[80];
 } mm_jpeg_exif_params_t;
 
 typedef struct {

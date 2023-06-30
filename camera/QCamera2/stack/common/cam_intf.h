@@ -175,6 +175,7 @@ typedef struct {
 
 typedef struct {
   uint32_t default_sensor_flip;
+  char moto_reserved[8];
   uint32_t sensor_mount_angle;
   cam_related_system_calibration_data_t otp_calibration_data;
 } cam_jpeg_metadata_t;
@@ -263,6 +264,7 @@ typedef struct{
 
     /* capabilities specific to HAL 1 */
 
+    char moto_reserved[8];
     int32_t modes_supported;                                /* mask of modes supported: 2D, 3D */
     uint32_t sensor_mount_angle;                            /* sensor mount angle */
 

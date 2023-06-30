@@ -612,14 +612,17 @@ private:
     Mutex mOfflineMetaBuffersLock;
     int32_t mOfflineBuffersIndex;
     int32_t mOfflineMetaIndex;
+    char moto_reserved3[4];
     uint32_t mFrameLen;
     Mutex mFreeBuffersLock; // Lock for free heap buffers
     List<int32_t> mFreeBufferList; // Free heap buffers list
+    char moto_reserved2[12];
     reprocess_type_t mReprocessType;
     uint32_t mSrcStreamHandles[MAX_STREAM_NUM_IN_BUNDLE];
     QCamera3ProcessingChannel *m_pSrcChannel; // ptr to source channel for reprocess
     QCamera3Channel *m_pMetaChannel;
     QCamera3StreamMem *mMemory;
+    char moto_reserved[4];
     QCamera3StreamMem mGrallocMemory;
     Vector<uint32_t> mPriorityFrames;
     Mutex            mPriorityFramesLock;
