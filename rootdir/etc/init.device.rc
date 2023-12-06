@@ -1,13 +1,13 @@
-on init && property:ro.boot.hardware.sku=XT1793
+on early-init && property:ro.boot.hardware.sku=XT1793
     setprop ro.boot.product.hardware.sku n
 
-on init && property:ro.boot.hardware.sku=XT1794
+on early-init && property:ro.boot.hardware.sku=XT1794
     setprop ro.boot.product.hardware.sku n
 
-on init && property:ro.boot.hardware.sku=XT1797
+on early-init && property:ro.boot.hardware.sku=XT1797
     setprop ro.boot.product.hardware.sku n
 
-on init && property:ro.boot.hardware.sku=XT1799-2
+on early-init && property:ro.boot.hardware.sku=XT1799-2
     setprop ro.boot.product.hardware.sku n
     mount none /vendor/etc/libnfc-nxp_retcn.conf /vendor/etc/libnfc-nxp.conf bind
 
