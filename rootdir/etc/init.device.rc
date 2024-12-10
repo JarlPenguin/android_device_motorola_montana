@@ -32,6 +32,10 @@ on boot
 on post-fs-data
     mkdir /data/.fps 0770 system system
 
+    # NFC local data and nfcee xml storage
+    mkdir /data/vendor/nfc 0770 nfc nfc
+    mkdir /data/vendor/nfc/param 0770 nfc nfc
+
 service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
     interface android.hardware.nfc@1.0::INfc default
     interface android.hardware.nfc@1.1::INfc default
