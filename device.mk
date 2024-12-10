@@ -54,15 +54,10 @@ PRODUCT_COPY_FILES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-    libnfc \
+    android.hardware.nfc@1.2-service \
     com.android.nfc_extras \
     NfcNci \
-    nqnfcee_access.xml \
-    nqnfcse_access.xml \
-    SecureElement \
-    Tag \
-    com.android.nfc_extras \
-    android.hardware.nfc@1.2-service
+    Tag
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
